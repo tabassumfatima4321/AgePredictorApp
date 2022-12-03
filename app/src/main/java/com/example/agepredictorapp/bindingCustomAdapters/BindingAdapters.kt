@@ -12,7 +12,9 @@ fun setVisibility(view: View, value: Boolean) {
 }
 @BindingAdapter("android:setText")
 fun setText(view: TextView, text:String?) {
-    text?.let {     view.text = text }
+    text?.let {
+        view.text = text
+    }
 }
 
 /*Recyclerview work*/

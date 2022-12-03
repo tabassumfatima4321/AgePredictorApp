@@ -16,7 +16,7 @@
 
         <TextView
             android:id="@+id/userAge"
-            android:setText="@{viewModel.result}"
+            android:text="abcd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.agepredictorapp.viewmodel.DefaultUserViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".fragment.HomeFragment">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:textColor="@color/black"
+            android:hint="UserName"/>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnSearch"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:text="Search"
+    />
+
+        <TextView
+            android:id="@+id/userAge"
+            android:setText="@{viewModel.result}"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.loader}"
+            />
+    </LinearLayout>
+</layout>

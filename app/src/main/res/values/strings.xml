@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AgePredictorApp</string>
+    <string name="INTERNET_ERROR">Can\'t reach server. Either you have no internet connection or server is down.</string>
+    <string name="SOMETHING_WENT_WRONG">Something Went Wrong.</string>
+    <string name="UNEXPECTED_ERROR">Un Expected Error Occurred</string>
+    <string name="NO_RESULT_FOUND">No Result Found</string>
+    <string name="NO_DATA_FOUND">No Data Found</string>
+    <string name="EMPTY_STRING" />
+    <string name="INVALID_STATE">Invalid State</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
